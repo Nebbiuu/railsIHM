@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="HBox" fx:id="VueJoueurCourant" prefHeight="700.0" prefWidth="360.0" style="-fx-background-color: lightblue; -fx-border-color: black;"
+xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+   <VBox fx:id="gaucheVBox" alignment="TOP_CENTER" prefHeight="205.0" prefWidth="145.0">
+      <children>
+         <HBox fx:id="cartesJoueurCourant" alignment="TOP_LEFT" prefHeight="205.0" prefWidth="145.0" >
+
+         </HBox>
+         <HBox fx:id="carteDestination" alignment="TOP_LEFT" prefHeight="205.0" prefWidth="145.0" >
+
+         </HBox>
+         <Label fx:id="nomJoueur" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="140.0" text="Joueur Courant" textAlignment="CENTER">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <font>
+               <Font name="Agency FB" size="24.0" />
+            </font>
+         </Label>
+      </children>
+   </VBox>
+   <VBox fx:id="droiteVBox" alignment="BOTTOM_RIGHT" prefHeight="220.0" prefWidth="255.0">
+      <children>
+         <Label fx:id="scoreJoueur" alignment="CENTER" contentDisplay="CENTER" prefHeight="96.0" prefWidth="219.0" text="40 pts" textAlignment="CENTER" textFill="#c93131">
+            <font>
+               <Font size="45.0" />
+            </font>
+         </Label>
+         <HBox fx:id="entoureWagGares" prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Label fx:id="nbWagons" alignment="CENTER" prefHeight="74.0" prefWidth="90.0" text="25">
+                  <graphic>
+                     <ImageView fx:id="imageWagon" fitHeight="55.0" fitWidth="55.0">
+                        
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Label>
+               <Label fx:id="nbGares" alignment="CENTER" prefHeight="71.0" prefWidth="90.0" text=" 3">
+                  <graphic>
+                     <ImageView fx:id="imageGare" fitHeight="55.0" fitWidth="55.0">
+                        
+                     </ImageView>
+                  </graphic>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Label>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+</children>
+</fx:root>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" style="-fx-border-color: black; -fx-border-width:8;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="147.0" text="Cartes Destinations" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox fx:id="carteDestination" prefHeight="140.0" prefWidth="290.0" maxWidth="320" />
+      <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="147.0" text="Cartes Wagons" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox fx:id="cartesJoueurCourant" prefHeight="140.0" prefWidth="290.0" maxWidth="300" />
+      <HBox fx:id="basHBox" alignment="TOP_RIGHT" prefHeight="54.0" prefWidth="450.0">
+         <children>
+            <Label fx:id="nomJoueur" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="147.0" text="Joueur Courant" textAlignment="CENTER">
+               <font>
+                  <Font url="@../fonts/ItalicHandMedium.otf" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreJoueur" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="100.0" text="40 pts" textAlignment="CENTER" textFill="#c93131">
+               <font>
+                  <Font url="@../fonts/ItalicHandMedium.otf" size="50.0" />
+               </font>
+            </Label>
+            <HBox fx:id="entoureWagGares" alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="nbWagons" alignment="CENTER" prefHeight="44.0" prefWidth="100.0" text="25">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="55.0">
+                           <image>
+                              <Image url="@../imagesIcons8/icons8-container-box-train-transportation-facility---rail-logistic-service-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nbGares" alignment="CENTER" prefHeight="41.0" prefWidth="73.0" text=" 3">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="55.0">
+                           <image>
+                              <Image url="@../imagesIcons8/icons8-town-hall-98.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+
+
+</fx:root>
